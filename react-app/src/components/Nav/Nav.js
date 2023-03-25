@@ -23,6 +23,7 @@ class Nav extends Component {
         <a href="/" className={styles.link}>
           <img src="icons/cart_unselected.png" alt="Cart" className={styles.navImage}/>
           Cart
+          <p className={styles.cartCounter}>1</p>
         </a>
         <a href="/" className={styles.link}>
           <img src="icons/myTarget_unselected.png" alt="My Target" className={styles.navImage}/>

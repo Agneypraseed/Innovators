@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from '../components/Nav/Nav';
+import Nav from '../../components/Nav/Nav';
 import styles from './home.module.css';
 
 
@@ -16,7 +16,7 @@ const Home = () => {
             <img src="icons/components/purchaseHistoryCard.png" alt="Purchase history" className={styles.myTarget_card}></img>
           </a>
 
-          <a href="/" className={styles.myTarget_links}>
+          <a href="/mytarget" className={styles.myTarget_links}>
             <img src="icons/components/targetCircle_visuals.png"/>
 
             <div className={styles.container}>
@@ -34,7 +34,6 @@ const Home = () => {
               </section>
             </React.Fragment>
             </div>
-
           </a>
 
           <a href="/" className={styles.myTarget_imageContainer}>

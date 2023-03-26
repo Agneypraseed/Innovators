@@ -23,6 +23,11 @@ class Product extends Component {
         <a href="/greenprogram"><img src="images/learn-more2.png" className={styles.viewImpact}></img> </a>
 
       </div>
+      <a href="/checkout">
+
+      <img src="images/product_screen2.png" className={styles.screen}/>
+      </a>
+
 
       <img src="images/product_screen3.png" className={styles.screen} />
 

@@ -2,6 +2,7 @@ import { withStyles } from "@material-ui/core";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
+import Impact from '../../components/Impact/Impact';
 
 import styles from "./GreenProgram.module.css";
 
@@ -56,33 +57,7 @@ class GreenProgram extends Component {
           </div>
         </a>
 
-        <a href="/" className={styles.reportings}>
-          <h2 className={styles.reportings_title}>Personal impact</h2>
-          <div className={styles.reportings_metricListing}>
-            <p className={styles.reportings_metricListing_left}>
-              <img src="icons/card.png" className={styles.reportings_image} />
-              <b>80lb</b> &#160;less fossil fuels burned
-            </p>
-          </div>
-          <div className={styles.reportings_metricListing}>
-            <p className={styles.reportings_metricListing_left}>
-              <img
-                src="icons/nonprofit.png"
-                className={styles.reportings_image}
-              />
-              <b>22L</b> &#160;of water saved
-            </p>
-          </div>
-          <div className={styles.reportings_metricListing}>
-            <p className={styles.reportings_metricListing_left}>
-              <img
-                src="icons/nonprofit.png"
-                className={styles.reportings_image}
-              />
-              <b>8b</b> &#160;less toxins in your system
-            </p>
-          </div>
-        </a>
+        <Impact page="Personal sustainability" className="styles.impact"/>
 
         <section className={styles.initiatives}>
           <h2 className={styles.initiatives_title}>Explore our initiatives</h2>

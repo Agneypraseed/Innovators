@@ -1,14 +1,12 @@
 
 import React, { Component } from 'react';
 import Nav from '../../components/Nav/Nav';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+
 import styles from './discover.module.css';
 
 class Discover extends Component {
@@ -45,14 +43,8 @@ class Discover extends Component {
           
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button variant="contained"  style={{
-        backgroundColor: "#bb271a",
-        textTransform: "none"
-    }}>
-          Add to cart
-        </Button>
-      </CardActions>
+      <img src="images/addtocart.png" ></img>
+
     </Card>
 
             <Card className={styles.cardStyle}>
@@ -74,23 +66,19 @@ class Discover extends Component {
           
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button variant="contained" style={{
-        backgroundColor: "#bb271a",
-        textTransform: "none"
-    }} className={styles.whiteLabel}>
-          Add to cart
-        </Button>
-      </CardActions>
+      <a href="/checkout">
+
+      <img src="images/addtocart.png" ></img>
+      </a>
     </Card>
 
   
       </div>
       </div>
 
-      
+      <a href="/greenprogram">
       <img src="images/greenforgreen.png"></img>
-
+      </a>
       
       <Nav/>
       </body>

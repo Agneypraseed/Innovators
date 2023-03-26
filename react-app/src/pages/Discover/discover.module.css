@@ -1,7 +1,7 @@
 .cardStyle {
     display: inline-block;
     width: 40vw;
-    height: 75vw;
+    height: 82vw;
 
 }
 
@@ -14,11 +14,6 @@
     width: 16px;
     height: 16px;
     padding-right: 5px;
-}
-
-.MuiButton-label{
-        color:white;
-
 }
 
 

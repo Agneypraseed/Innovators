@@ -4,7 +4,10 @@ const port = 4000;
 const mongoose = require("mongoose");
 const User = require("./models/user");
 const bodyParser = require("body-parser");
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
+const cors = require("cors");
+
+app.use(cors());
 
 dotenv.config();
 
@@ -67,7 +70,7 @@ app.get("/getgreencashback", (req, res) => {
     });
 });
 
-app.put("/addgreencashback/:id", (req, res) => {  
+app.put("/addgreencashback/:id", (req, res) => {
   User.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function (
     user
   ) {

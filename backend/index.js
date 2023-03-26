@@ -1,15 +1,16 @@
 const express = require("express");
 const app = express();
 const port = 4000;
-const routes = require("./routes/api");
 const mongoose = require("mongoose");
 const User = require("./models/user");
 const bodyParser = require("body-parser");
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 app.use(bodyParser.json());
 
-const dbURI =
-  "mongodb+srv://admin:admin@cluster0.ujqsols.mongodb.net/Innovators?retryWrites=true&w=majority";
+const dbURI = process.env.MONGODB_URI;
 mongoose
   .connect(dbURI)
   .then((res) =>
@@ -66,8 +67,7 @@ app.get("/getgreencashback", (req, res) => {
     });
 });
 
-app.put("/addgreencashback/:id", (req, res) => {
-  console.log(req.body);
+app.put("/addgreencashback/:id", (req, res) => {  
   User.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function (
     user
   ) {

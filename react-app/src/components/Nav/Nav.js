@@ -8,7 +8,7 @@ class Nav extends Component {
 
     return (
     	<nav className={styles.navContainer}>
-    		<a href="facebook.com" className={styles.link}>
+    		<a href="/" className={styles.link}>
           <img src="icons/discover_unselected.png" alt="Discover" className={styles.navImage}/>
           Discover
         </a>
@@ -20,12 +20,12 @@ class Nav extends Component {
           <img src="icons/wallet_unselected.png" alt="Wallet" className={styles.navImage}/>
           Wallet
         </a>
-        <a href="/" className={styles.link}>
+        <a href="/checkout" className={styles.link}>
           <img src="icons/cart_unselected.png" alt="Cart" className={styles.navImage}/>
           Cart
           <p className={styles.cartCounter}>1</p>
         </a>
-        <a href="/" className={styles.link}>
+        <a href="/mytarget" className={styles.link}>
           <img src="icons/myTarget_unselected.png" alt="My Target" className={styles.navImage}/>
           My Target
         </a>

@@ -13,7 +13,7 @@ dotenv.config();
 
 app.use(bodyParser.json());
 
-const dbURI = process.env.MONGODB_URI;
+const dbURI = 'mongodb+srv://admin:admin@cluster0.ujqsols.mongodb.net/Innovators?retryWrites=true&w=majority';
 mongoose
   .connect(dbURI)
   .then((res) =>

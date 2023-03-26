@@ -47,7 +47,7 @@ class MyTarget extends Component {
             <img src="icons/birthday.png" className={styles.listItem_image} />
             <div className={styles.listItem_descriptionContainer}>
               <h2 className={styles.listItem_title_normal}>
-                Birthday: <b>[11/11]</b>
+                Birthday: <b>05/11</b>
               </h2>
             </div>
           </div>

@@ -1,3 +1,11 @@
+.noStyle {
+	margin: 0;
+	padding: 0;
+	all: unset;
+	width: auto;
+	height: auto;
+}
+
 .body {
 	background-color: #F7F7F7;
 	width: 100%;
@@ -9,6 +17,58 @@
 	width: 100%;
 	height: auto;
 	margin-bottom: 20px;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 48px 12px 0px 4px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+.actionButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4px;
+	box-sizing: border-box;
+}
+
+.actionButtons {
+	width: 40px;
+	height: 40px;
+}
+
+.header_textContainer {
+	padding: 0px 0px 20px 12px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.header_title {
+	font-family: Helvetica, Sans-Serif;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 37px;
+	margin: 0px 0px 4px 0px;
+	color: black;
+	text-align: left;
+}
+
+.header_subtext {
+	font-family: Helvetica, Sans-Serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0px;
+	color: #666666;
+	text-align: left;
 }
 
 .listItem {
@@ -49,6 +109,15 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+
+.listItem_title_normal {
+	font-family: Helvetica, Sans-Serif;
+	font-weight: normal;
+	font-size: 20px;
+	margin: 4px 0px 0px 0px;
+	color: black;
+	line-height: 23px;
 }
 
 .listItem_title {

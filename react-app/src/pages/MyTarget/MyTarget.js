@@ -10,8 +10,42 @@ class MyTarget extends Component {
 
     return (
       <body className={styles.body}>
-      <img src="icons/components/TargetCircleCard.png" className={styles.placeholderImage}/>
+        <header className={styles.header}>
+          <div className={styles.actionButtonsContainer}>
+            <a href="/" className={styles.noStyle}>
+              <img src="icons/close.png" className={styles.actionButtons}/>
+            </a>
+            <img src="icons/scanBarcode.png" className={styles.actionButtons}/>
+          </div>
+
+          <div className={styles.header_textContainer}>
+            <h1 className={styles.header_title}>Target Circle</h1>
+            <p className={styles.header_subtext}>
+              More rewarding, all around.
+            </p>
+          </div>
+        </header>
+
+        <a href="/" className={styles.listItem}>
+        <div className={styles.listItem_leftContentContainer}>
+          <img src="icons/birthday.png" className={styles.listItem_image}/>
+          <div className={styles.listItem_descriptionContainer}>
+              <h2 className={styles.listItem_title_normal}>Birthday: <b>[11/11]</b></h2>
+          </div>
+        </div>
+      </a>
+
     	<a href="/greenprogram" className={styles.listItem}>
+        <div className={styles.listItem_leftContentContainer}>
+          <img src="icons/circleActivity.png" className={styles.listItem_image}/>
+          <div className={styles.listItem_descriptionContainer}>
+              <h2 className={styles.listItem_title}>Target Circle activity</h2>
+          </div>
+        </div>
+        <img src="icons/carat_right.png" className={styles.listItem_carat}/>
+      </a>
+
+      <a href="/greenprogram" className={styles.listItem}>
         <div className={styles.listItem_leftContentContainer}>
           <img src="icons/leaf.png" className={styles.listItem_image}/>
           <div className={styles.listItem_descriptionContainer}>
@@ -21,8 +55,17 @@ class MyTarget extends Component {
         </div>
         <img src="icons/carat_right.png" className={styles.listItem_carat}/>
       </a>
-      <img src="icons/components/TargetCircleCard_bottom.png" className={styles.placeholderImage}/>
       
+      <a href="/greenprogram" className={styles.listItem}>
+        <div className={styles.listItem_leftContentContainer}>
+          <div className={styles.listItem_descriptionContainer}>
+              <h2 className={styles.listItem_title}>Partners</h2>
+              <p className={styles.listItem_subtext}>Enjoy perks from Ulta Beauty and Apple</p>
+          </div>
+        </div>
+        <img src="icons/carat_right.png" className={styles.listItem_carat}/>
+      </a>
+
       <a href="/" className={styles.reportings}>
         <h2 className={styles.reportings_title}>Available earnings</h2>
         <div className={styles.reportings_metricListing}>

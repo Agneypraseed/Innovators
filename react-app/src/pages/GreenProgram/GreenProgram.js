@@ -13,7 +13,10 @@ class GreenProgram extends Component {
 
       <header className={styles.header}>
       <div className={styles.actionButtonsContainer}>
-        <img src="icons/close.png" className={styles.actionButtons}/>
+        <a href="/mytarget" className={styles.noStyle}>
+          <img src="icons/backArrow.png" className={styles.actionButtons}/>
+        </a>
+
         <img src="icons/scanBarcode.png" className={styles.actionButtons}/>
       </div>
 
@@ -39,19 +42,19 @@ class GreenProgram extends Component {
         <div className={styles.reportings_metricListing}>
           <p className={styles.reportings_metricListing_left}>
             <img src="icons/card.png" className={styles.reportings_image}/>
-            80lb less fossil fuels burned
+            <b>80lb</b> &#160;less fossil fuels burned
           </p>
         </div>
         <div className={styles.reportings_metricListing}>
           <p className={styles.reportings_metricListing_left}>
             <img src="icons/nonprofit.png" className={styles.reportings_image}/>
-            22L of water saved
+            <b>22L</b> &#160;of water saved
           </p>
         </div>
         <div className={styles.reportings_metricListing}>
           <p className={styles.reportings_metricListing_left}>
             <img src="icons/nonprofit.png" className={styles.reportings_image}/>
-            8b less toxins in your system
+            <b>8b</b> &#160;less toxins in your system
           </p>
         </div>
       </a>
@@ -80,7 +83,7 @@ class GreenProgram extends Component {
             <img src="icons/zeroTarget.png" className={styles.initiatives_image}/>
             <p className={styles.initiatives_listItem_title}>Target Zero</p>
           </a>
-          
+
         </ul>
       </section>
 

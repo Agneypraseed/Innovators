@@ -20,16 +20,7 @@ class Product extends Component {
         
         <h2>Available offers</h2>
         <p> <img src="icons/leaf.png" className={styles.logo}/><b>Earn 1.5% cashback for shopping green</b></p>
-        <a href="#impact"><img src="images/view-impact.png" className={styles.viewImpact}></img> </a>
-
-      </div>
-      <a href="/checkout">
-
-      <img src="images/product_screen2.png" className={styles.screen}/>
-      </a>
-
-      <div id="impact">
-        <Impact page="Sustainability"/>
+        <a href="/greenprogram"><img src="images/learn-more2.png" className={styles.viewImpact}></img> </a>
 
       </div>
 

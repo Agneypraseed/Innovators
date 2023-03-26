@@ -7,22 +7,34 @@ class Impact extends Component {
   render() {
 
     return (
-        <><h2 className={styles.reportings_title}>{this.props.page} impact</h2><div className={styles.reportings_metricListing}>
-            <p className={styles.reportings_metricListing_left}>
-                <img src="icons/card.png" className={styles.reportings_image} />
-                <b>80lb</b> &#160;less fossil fuels burned
+        <>
+        <div className={styles.container}>
+        <h2 className={styles.reportings_title}>{this.props.page} impact</h2>
+
+<img src="icons/fairtrade.png" className={styles.reportings_image} />
+
+
+          <p className={styles.reportings_metricListing_left}>
+                <b className={styles.data}>5</b>
             </p>
-        </div><div className={styles.reportings_metricListing}>
-                <p className={styles.reportings_metricListing_left}>
-                    <img src="icons/nonprofit.png" className={styles.reportings_image} />
-                    <b>22L</b> &#160;of water saved
+            <p className={styles.subtext}>ethically sourced products</p>
+
+            <img src="icons/organic.png" className={styles.reportings_image} />
+            <p className={styles.reportings_metricListing_left}>
+                   
+                    <b className={styles.data}>20</b>
                 </p>
-            </div><div className={styles.reportings_metricListing}>
+                <p className={styles.subtext}>100% organic products</p>
+
+                <img src="icons/reusable.png" className={styles.reportings_image}></img>
+
                 <p className={styles.reportings_metricListing_left}>
-                    <img src="icons/nonprofit.png" className={styles.reportings_image} />
-                    <b>8b</b> &#160;less toxins in your system
+                    <b className={styles.data}>1</b>
                 </p>
-            </div></>
+                <p className={styles.subtext}>reusable or recycleable product</p>
+            
+                </div>
+            </>
 
     );
 	}

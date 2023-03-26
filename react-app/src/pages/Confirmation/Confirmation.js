@@ -1,14 +1,3 @@
-import { withStyles } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import CheckIcon from '@material-ui/icons/Check';
-import Button from '@material-ui/core/Button';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../../components/Nav/Nav';
@@ -28,10 +17,11 @@ class Confirmation extends Component {
         <h1>thank you for your order!</h1>
         <p>We'll send confirmations and order updates to <b>nigel.vaz@publicissapient.com</b></p>
         <br></br>
-        <h1 className={styles.orderDetails}>your order helped save the planet!</h1>
+        <h1 className={styles.orderDetails}><img src="icons/leaf.png" className={styles.logo}></img>  your order helped save the planet!</h1>
 
-
-      
+        <a href="/greenprogram">
+        <img src="images/learn-more.png"></img>
+        </a>
 
       <div className={styles.container}>
         <img src="icons/pickup-order.png" />

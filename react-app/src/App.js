@@ -5,10 +5,10 @@ import LoginPage from "./components/Login/LoginPage";
 import Home from "./pages/Home/Home";
 import MyTarget from "./pages/MyTarget/MyTarget";
 import GreenProgram from "./pages/GreenProgram/GreenProgram";
+import Checkout from "./pages/Checkout/Checkout";
 import Confirmation from "./pages/Confirmation/Confirmation";
 import Discover from "./pages/Discover/Discover";
-import Checkout from "./pages/Checkout/Checkout";
-
+import Product from "./pages/Product/Product";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/greenprogram" element={<GreenProgram />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </div>
   );

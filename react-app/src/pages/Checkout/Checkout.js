@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import CheckIcon from '@material-ui/icons/Check';
 import Button from '@material-ui/core/Button';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';

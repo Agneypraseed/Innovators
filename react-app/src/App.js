@@ -7,6 +7,7 @@ import MyTarget from "./pages/MyTarget/MyTarget";
 import GreenProgram from "./pages/GreenProgram/GreenProgram";
 import Confirmation from "./pages/Confirmation/Confirmation";
 import Discover from "./pages/Discover/Discover";
+import Checkout from "./pages/Checkout/Checkout";
 
 
 function App() {

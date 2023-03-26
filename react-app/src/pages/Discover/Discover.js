@@ -47,15 +47,22 @@ class Discover extends Component {
 
     </Card>
 
+
             <Card className={styles.cardStyle}>
       <CardActionArea>
+
+      <a href="/product">
+
+      
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="Nature's Path Grain"
           height="140"
           image="images/product2.png"
-          title="Method All-Purpose"
+          title="Nature's Path Grain"
         />
+
+</a>
         <CardContent>
         
         <p className={styles.cashback}>

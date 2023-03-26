@@ -4,6 +4,9 @@ const port = 4000;
 const routes = require("./routes/api");
 const mongoose = require("mongoose");
 const User = require("./models/user");
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
 
 const dbURI =
   "mongodb+srv://admin:admin@cluster0.ujqsols.mongodb.net/Innovators?retryWrites=true&w=majority";
@@ -61,4 +64,15 @@ app.get("/getgreencashback", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+});
+
+app.put("/addgreencashback/:id", (req, res) => {
+  console.log(req.body);
+  User.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function (
+    user
+  ) {
+    User.findOne({ _id: req.params.id }).then(function (user) {
+      res.send(user);
+    });
+  });
 });

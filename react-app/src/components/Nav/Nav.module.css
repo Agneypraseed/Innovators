@@ -1,14 +1,16 @@
 .navContainer{	
-	padding: 4px 0px 32px 0px;
-	box-sizing: border-box;
 	position: fixed;
 	bottom: 0;
+	padding: 4px 0px 32px 0px;
+	box-sizing: border-box;
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	background-color: white;
 	justify-content: space-between;
 	border-top: 1px solid #B2B2B2;
+	z-index: 1000;
 }
 
 .link{

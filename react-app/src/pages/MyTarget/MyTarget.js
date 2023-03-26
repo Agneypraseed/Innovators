@@ -11,7 +11,7 @@ class MyTarget extends Component {
     return (
       <body className={styles.body}>
       <img src="icons/components/TargetCircleCard.png" className={styles.placeholderImage}/>
-    	<a href="/" className={styles.listItem}>
+    	<a href="/greenprogram" className={styles.listItem}>
         <div className={styles.listItem_leftContentContainer}>
           <img src="icons/leaf.png" className={styles.listItem_image}/>
           <div className={styles.listItem_descriptionContainer}>

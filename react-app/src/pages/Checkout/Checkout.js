@@ -52,7 +52,7 @@ class Checkout extends Component {
 
         <AccordionDetails>
             <p className={styles.accordionDetails}> Ready within 2 hours at Merrifield </p> 
-            <img src="images/grocery-product.png"/>
+            <img src="images/product2.png"/>
         </AccordionDetails>
       </Accordion>
 

@@ -5,12 +5,15 @@ import LoginPage from "./components/Login/LoginPage";
 import Home from "./pages/Home/Home";
 import MyTarget from "./pages/MyTarget/MyTarget";
 import GreenProgram from "./pages/GreenProgram/GreenProgram";
+import Confirmation from "./pages/Confirmation/Confirmation";
+import Discover from "./pages/Discover/Discover";
+
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Discover />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/mytarget" element={<MyTarget />} />
         <Route path="/greenprogram" element={<GreenProgram />} />

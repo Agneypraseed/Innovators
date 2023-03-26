@@ -14,6 +14,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/mytarget" element={<MyTarget />} />
         <Route path="/greenprogram" element={<GreenProgram />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
     </div>
   );
